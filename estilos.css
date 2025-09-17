@@ -1,0 +1,253 @@
+@font-face{
+	font-family:"Those Glitch Regular";
+	src:url("fuentes/Those Glitch Regular.ttf")
+}
+
+body{
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+h1{
+	font-family:"Those Glitch Regular";
+	font-size:35px;
+	color:#ed1f1f;
+}
+
+p{
+	font-size:18px;
+	text-align:justify;
+	line-height:28px;
+	color:white;
+	text-shadow:2px 2px 3px #9c9c9c;
+}
+
+/*Encabezado*/
+
+header{
+	display:flex;
+	width:98%;
+	height:auto;
+	background-color:#363636;
+	justify-content:space-between;
+	align-items:center;
+	padding:1%;
+}
+
+.logo{
+	width:19%;
+	height:auto;
+}
+
+img{/*Adaptamos la imagen al div*/
+	width:100%;
+	height:auto;
+}
+
+nav{
+	display:flex;
+	width:75%;
+	height:auto;
+	background-color:#828282;
+	justify-content:space-evenly;
+	align-items:center;
+	padding:1.5%;
+}
+
+/*Página*/
+
+main{
+	display:flex;
+	width:98%;
+	height:auto;
+	background-image:url("imagenes/fondo/fondo.png");
+	background-attachment:fixed;
+	background-size:cover;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	padding:1%;
+}
+
+.texto{
+	width:61%;
+	height:auto;
+	margin-right:10px
+}
+
+.texto2{
+	width:98%;
+	height:auto;
+	margin-right:10px
+}
+
+.foto{
+	width:35%;
+	height:auto;
+}
+
+/*Pie de la Página*/
+
+footer{
+	display:flex;
+	width:98%;
+	height:auto;
+	background-color:#363636;
+	justify-content:space-around;
+	align-items:center;
+	padding:1%;
+}
+
+.logo2{
+	width:8%;
+	height:auto;
+}
+
+.contacto{
+	width:40%;
+	height:auto;
+}
+
+.social{
+	display:flex;
+	width:15%;
+	height:auto;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+/*Links*/
+a:link,a:visited{
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+	display:flex;
+	width:18%; /*Ancho*/
+	height:auto; /*Altura*/
+	justify-content:center; /*Alineación horizontal del texto*/
+	align-items:center; /*Alineación vertical del texto*/
+	
+	transition:all 0.5s; /*Cuando paso el mouse anima todas las propiedades*/
+}
+
+a:hover{
+	color:white;
+	font-size:18px;
+}
+
+.redes:link,.redes:hover,.redes:visited{
+	display:flex;
+	width:18%; /*Ancho*/
+	height:auto; /*Altura*/
+	justify-content:center; /*Alineación horizontal del texto*/
+	align-items:center; /*Alineación vertical del texto*/
+	font-weight:normal;
+	transition:none; /*Cuando paso el mouse anima todas las propiedades*/
+	font-size:13px;
+	color:#c9c9c9;
+}
+
+.correo:link,.correo:hover,.correo:visited{
+	display:flex;
+	width:auto; /*Ancho*/
+	height:auto; /*Altura*/
+	justify-content:center; /*Alineación horizontal del texto*/
+	align-items:center; /*Alineación vertical del texto*/
+	font-weight:normal;
+	transition:none; /*Cuando paso el mouse anima todas las propiedades*/
+	font-size:13px;
+	color:#c9c9c9;
+}
+
+/*Interior Footer*/
+.img_redes{
+	border-radius:10px;
+}
+
+.texto_contacto{
+	font-size:13px;
+	text-shadow:none;
+	color:#c9c9c9;
+	line-height:15px;
+	text-align:center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:800px) /*Si el ancho de la pantalla es de hasta 800px hace algo*/
+{
+	h1{
+		font-size:28px;
+	}
+	
+	a:link,a:hover,a:visited{
+		width:50%;
+		margin:5px;
+	}
+	
+	/*Encabezado*/
+	
+	header{
+		flex-direction:column;
+		align-items:center;
+		width:95%;
+		padding:2.5%;
+	}
+	
+	nav{
+		flex-direction:column;
+		align-items:center;
+		padding:1.5%;
+	}
+	
+	.logo{
+		width:70%;
+		margin-bottom:8px;
+	}
+	
+	/*Página*/
+	
+	main{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	.texto{
+		width:95%;
+	}
+	
+	.foto{
+		width:70%;
+	}
+	
+	/*Pie de la página*/
+	
+	footer{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	.logo2{
+		width:30%;
+	}
+	
+	.contacto{
+		width:90%;
+	}
+	
+	.texto_contacto{
+		font-size:18px;
+		line-height:23px;
+	}
+	
+	.social{
+		width:45%;	
+	}
+	
+	.redes:link,.redes:hover,.redes:visited{
+		width:30%;
+	}
+	
+	.correo:link,.correo:hover,.correo:visited{
+		font-size:18px;
+	}
+}
